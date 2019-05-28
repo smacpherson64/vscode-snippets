@@ -1,0 +1,131 @@
+{
+  // Place your snippets for javascriptreact here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  "Code Heading": {
+    "prefix": ["code-heading-main", "// ==========================="],
+    "body": [
+      "// ===========================",
+      "// $1",
+      "// ===========================",
+      ""
+    ],
+    "description": "Creates a Code Headding"
+  },
+  "Code Heading Sub": {
+    "prefix": ["code-sub-heading", "// ---------------------------"],
+    "body": [
+      "// ---------------------------",
+      "// $1",
+      "// ---------------------------",
+      ""
+    ],
+    "description": "Creates a Code Headding"
+  },
+  "Console": {
+    "prefix": ["console.log"],
+    "body": ["console.log($1);"],
+    "description": "Log output to console"
+  },
+  "Const Function": {
+    "prefix": "const fn =",
+    "body": [
+      "/**",
+      "* Constant Code Review Helper",
+      "* --------------------------------",
+      "* TODO: Remove unnecessary details",
+      "* - What does this function do?",
+      "* ${1}",
+      "*",
+      "* - How does it work? (Implementation Details)",
+      "* ${2}",
+      "*",
+      "* - What does it need?",
+      "* ${3}",
+      "*",
+      "* - Is it pure?",
+      "* ${4}",
+      "*",
+      "* - How do you test it?",
+      "* ${5}",
+      "*/",
+      "${6:export }const ${7:name} = (${8:params}) =>",
+      "  ${9}",
+      ""
+    ],
+    "description": "Const Function"
+  },
+  "Function": {
+    "prefix": "function",
+    "body": [
+      "/**",
+      "* Constant Code Review Helper",
+      "* --------------------------------",
+      "* TODO: Remove unnecessary details",
+      "* - What does this function do?",
+      "* ${1}",
+      "*",
+      "* - How does it work? (Implementation Details)",
+      "* ${2}",
+      "*",
+      "* - What does it need?",
+      "* ${3}",
+      "*",
+      "* - Is it pure?",
+      "* ${4}",
+      "*",
+      "* - How do you test it?",
+      "* ${5}",
+      "*/",
+      "${6:export }function ${7:name}(${8:params}) {",
+      "  return ${9}",
+      "}",
+      ""
+    ],
+    "description": "Function"
+  },
+  "Jest Init Test": {
+    "prefix": "jest-init-test",
+    "body": [
+      "import { ${1:name} } from \"./$2\";",
+      "",
+      "describe(\"${1:name}\", () => {",
+      "  it(\"$3\", () => {",
+      "    $4",
+      "  });",
+      "});",
+      ""
+    ],
+    "description": "Jest Init Test"
+  },
+  "Jest Describe": {
+    "prefix": "describe",
+    "body": [
+      "describe(\"${1:name}\", () => {",
+      "  it(\"$2\", () => {",
+      "    $3",
+      "  });",
+      "});",
+      ""
+    ],
+    "description": "Jest Describe"
+  },
+  "Jest It": {
+    "prefix": "it",
+    "body": ["it(\"$2\", () => {", "  $3", "});", "", ""],
+    "description": "Jest It"
+  },
+  "Jest It Is Function": {
+    "prefix": "it is function",
+    "body": [
+      "it(\"is a function\", () => {",
+      "  assertIsFunction($1);",
+      "});",
+      "",
+      ""
+    ],
+    "description": "Jest It"
+  }
+}
