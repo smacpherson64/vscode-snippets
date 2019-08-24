@@ -1,0 +1,31 @@
+{
+  "Gherkin Capability": {
+    "prefix": "capability",
+    "body": [
+      "In order to ${1:business goal}",
+      "As a ${2:internal stakeholder}",
+      "I want ${3:stakeholder} to be able to ${4:high level feature}"
+    ]
+  },
+  "Gherkin Feature": {
+    "prefix": "feature",
+    "body": [
+      "#language: en",
+      "",
+      "Feature: ${1:feature name}",
+      "",
+      "As a ${1: stakeholder}",
+      "I want to be able to ${2: some capability}",
+      "So that I can ${3: perform some action}"
+    ]
+  },
+  "Gherkin Example Scenario": {
+    "prefix": ["example", "scenerio"],
+    "body": [
+      "Scenario: ${1:name}",
+      "  Given ${2: a stakeholder takes an action}",
+      "  When ${3: some event or condition occurs}",
+      "  Then ${4: this result should happen}"
+    ]
+  }
+}
